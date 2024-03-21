@@ -1,0 +1,40 @@
+{
+  "location": "swedencentral",
+  "subscription_name": "lz-corpapp-prod",
+  "subscription_management_group_association_enabled": false,
+  "subscription_management_group_id": "mymg",
+  "subscription_register_resource_providers_enabled": false,
+  "virtual_network_enabled": true,
+  "virtual_networks": {
+    "vnet1": {
+      "name": "vnet1",
+      "address_space": [
+        "192.168.2.0/24"
+      ],
+      "resource_group_name": "rg1",
+      "resource_group_lock_enabled": true
+    }
+  },
+  "umi_enabled": false,
+  "umi_name": "umi",
+  "umi_resource_group_name": "rg-lzidentity",
+  "umi_role_assignments": {
+    "myrg-contrib": {
+      "definition": "Contributor",
+      "relative_scope": "/resourceGroups/MyRg"
+    }
+  },
+  "resource_group_creation_enabled": true,
+  "resource_groups": {
+    "myrg": {
+      "name": "MyRg",
+      "location": "swedencentral"
+    }
+  },
+  "role_assignment_enabled": false,
+  "tags": {
+    "Environment": "prod",
+    "DataClassification": "Confidential",
+    "Criticality": "High"
+  }
+}
